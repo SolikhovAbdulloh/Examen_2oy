@@ -556,6 +556,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.m-auto{
+  margin: auto;
+}
+
 .mt-3{
   margin-top: 0.75rem;
 }
@@ -564,8 +568,20 @@ video {
   margin-top: 10vh;
 }
 
+.mt-\[18rem\]{
+  margin-top: 18rem;
+}
+
+.mt-\[7rem\]{
+  margin-top: 7rem;
+}
+
 .flex{
   display: flex;
+}
+
+.table{
+  display: table;
 }
 
 .grid{
@@ -584,6 +600,18 @@ video {
   height: 439px;
 }
 
+.h-\[747px\]{
+  height: 747px;
+}
+
+.h-\[90px\]{
+  height: 90px;
+}
+
+.h-\[917px\]{
+  height: 917px;
+}
+
 .w-\[100\%\]{
   width: 100%;
 }
@@ -594,6 +622,14 @@ video {
 
 .w-\[393px\]{
   width: 393px;
+}
+
+.w-\[652px\]{
+  width: 652px;
+}
+
+.w-\[90\%\]{
+  width: 90%;
 }
 
 .grid-cols-2{
@@ -628,6 +664,14 @@ video {
   justify-content: space-around;
 }
 
+.gap-1{
+  gap: 0.25rem;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
 .gap-\[20px\]{
   gap: 20px;
 }
@@ -652,13 +696,35 @@ video {
   border-radius: 40px;
 }
 
+.border-b-\[2px\]{
+  border-bottom-width: 2px;
+}
+
 .border-b-\[4px\]{
   border-bottom-width: 4px;
+}
+
+.border-r-\[2px\]{
+  border-right-width: 2px;
+}
+
+.border-\[\#D7D7DD\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(215 215 221 / var(--tw-border-opacity));
+}
+
+.border-\[black\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .border-\[yellow\]{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 0 / var(--tw-border-opacity));
+}
+
+.border-b-\[1px_solid_black\]{
+  border-bottom-color: 1px solid black;
 }
 
 .bg-\[\#E9E9EC\]{
@@ -671,25 +737,53 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-oq{
+  background-color: #ffff;
+}
+
 .bg-yashil{
   --tw-bg-opacity: 1;
   background-color: rgb(11 117 114 / var(--tw-bg-opacity));
+}
+
+.p-1{
+  padding: 0.25rem;
 }
 
 .p-2{
   padding: 0.5rem;
 }
 
+.p-4{
+  padding: 1rem;
+}
+
 .p-5{
   padding: 1.25rem;
+}
+
+.p-\[10px\]{
+  padding: 10px;
+}
+
+.p-\[15px\]{
+  padding: 15px;
 }
 
 .p-\[20px\]{
   padding: 20px;
 }
 
+.p-\[80px\]{
+  padding: 80px;
+}
+
 .pl-\[30px\]{
   padding-left: 30px;
+}
+
+.pr-5{
+  padding-right: 1.25rem;
 }
 
 .pt-3{
@@ -698,6 +792,14 @@ video {
 
 .text-center{
   text-align: center;
+}
+
+.text-\[11px\]{
+  font-size: 11px;
+}
+
+.text-\[14px\]{
+  font-size: 14px;
 }
 
 .text-\[16px\]{
@@ -750,6 +852,11 @@ video {
   color: rgb(107 107 108 / var(--tw-text-opacity));
 }
 
+.text-\[\#fff\]{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-oq{
   color: #ffff;
 }
@@ -800,15 +907,19 @@ header {
   display: none;
 }
 
-.pictures{
+.pictures {
   position: relative;
 }
 
-.pictures_text h3{
+.pictures_text h3 {
   background-color: yellowgreen;
   color: white;
   position: absolute;
-  top:0px;
+  top: 0px;
+}
+
+table tr td {
+  border: 1px solid #d7d7dd;
 }
 
 @media (min-width: 1600px) {
@@ -909,7 +1020,7 @@ header {
     gap: 20px;
   }
 
-  .cards{
+  .cards {
     width: 100%;
     height: 100%;
     display: flex;
@@ -917,34 +1028,34 @@ header {
     align-items: center;
   }
 
-  .cards h3{
+  .cards h3 {
     text-align: center;
   }
 
-  .cards p{
+  .cards p {
     text-align: center;
   }
 }
 
-@media (max-width:1800px){
-  .pictures img{
+@media (max-width: 1800px) {
+  .pictures img {
     width: 60%;
   }
 }
 
-@media (max-width:1766px){
-  .pictures h3{
+@media (max-width: 1766px) {
+  .pictures h3 {
     width: 40%;
   }
 }
 
-@media(max-width:900px){
-  .three_section div{
+@media (max-width: 900px) {
+  .three_section div {
     display: none;
   }
 }
 
-@media (max-width:1080px){
+@media (max-width: 1080px) {
   .four_section div {
     gap: 30px;
     display: flex;
@@ -953,21 +1064,53 @@ header {
   }
 }
 
-@media(max-width:1449px) {
-  .flex_section{
+@media (max-width: 1449px) {
+  .flex_section {
     display: flex;
     flex-direction: column;
     gap: 50px;
     align-items: center;
   }
 
-  .flex_section div{
+  .flex_section div {
     width: 100%;
     height: 50%;
   }
 
-  .section_card{
+  .section_card {
     display: flex;
     flex-direction: column;
   }
 }
+
+@media (max-width: 1344px) {
+  .responsivee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  table {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .responsivee{
+    width: 100%;
+  }
+
+  .right {
+    width: 555px;
+    height: 666px;
+  }
+
+  table tr,th,td{
+    width: 100%;
+    height: 100%;
+  }
+}
+

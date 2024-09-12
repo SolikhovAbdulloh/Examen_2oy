@@ -45,49 +45,19 @@ header {
   display: none;
 }
 
-.pictures{
-    position: relative;
+.pictures {
+  position: relative;
 }
-.pictures_text h3{
-    background-color: yellowgreen;
-    color: white;
-    position: absolute;
-    top:0px;
-   
+.pictures_text h3 {
+  background-color: yellowgreen;
+  color: white;
+  position: absolute;
+  top: 0px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+table tr td {
+  border: 1px solid #d7d7dd;
+}
 
 @media (min-width: 1600px) {
   .contiener {
@@ -171,67 +141,90 @@ header {
     align-items: center;
     gap: 20px;
   }
-  .cards{
+  .cards {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
     align-items: center;
+  }
 
-  }
-  
-  
-  .cards h3{
+  .cards h3 {
     text-align: center;
   }
-  .cards p{
+  .cards p {
     text-align: center;
   }
-  
 }
-@media (max-width:1800px){
-   .pictures img{
+@media (max-width: 1800px) {
+  .pictures img {
     width: 60%;
-   }
+  }
 }
-@media (max-width:1766px){
-   .pictures h3{
+@media (max-width: 1766px) {
+  .pictures h3 {
     width: 40%;
-   }
+  }
 }
-@media(max-width:900px){
-    .three_section div{
-        display: none;
-    }
-}
-
-@media (max-width:1080px){
-    .four_section div {
-        
-        gap: 30px;
-        display: flex;   
-        flex-direction: column;
-        align-items: center;
-    }
+@media (max-width: 900px) {
+  .three_section div {
+    display: none;
+  }
 }
 
-@media(max-width:1449px) {
-    .flex_section{
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        
-        align-items: center;
-
-    }
-    .flex_section div{
-        width: 100%;
-        height: 50%;
-    }
-    .section_card{
-        display: flex;
-        flex-direction: column;
-        
-
-    }
+@media (max-width: 1080px) {
+  .four_section div {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
+@media (max-width: 1449px) {
+  .flex_section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    align-items: center;
+  }
+  .flex_section div {
+    width: 100%;
+    height: 50%;
+  }
+  .section_card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1344px) {
+  .responsivee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  table {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .responsivee{
+    width: 100%;
+  }
+  
+    .right {
+   width: 555px;
+height: 666px;
+
+}
+table tr,th,td{
+    width: 100%;
+    height: 100%;
+}
+}
+
