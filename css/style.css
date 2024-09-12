@@ -134,6 +134,16 @@ header {
     0 0 20px #ff9619, 0 0 20px #ff9619;
   transition: 0.5s;
 }
+.card_tum:hover {
+  box-shadow: 0 0 20px #ff9619, /* Neon cyan */ 0 0 20px #ff9619,
+    0 0 20px #ff9619, 0 0 20px #ff9619;
+  transition: 0.9s;
+}
+.section_card:hover {
+  box-shadow: 0 0 20px #ff9619, /* Neon cyan */ 0 0 20px #ff9619,
+    0 0 20px #ff9619, 0 0 20px #ff9619;
+  transition: 0.9s;
+}
 @media (max-width: 700px) {
   .first_section div {
     display: flex;
@@ -161,15 +171,16 @@ header {
     align-items: center;
     gap: 20px;
   }
-  .cards {
+  .cards{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;   
+    align-items: center;
+
   }
-  .cards img{
-    width: 12%;
-  }
+  
+  
   .cards h3{
     text-align: center;
   }
@@ -191,5 +202,36 @@ header {
 @media(max-width:900px){
     .three_section div{
         display: none;
+    }
+}
+
+@media (max-width:1080px){
+    .four_section div {
+        
+        gap: 30px;
+        display: flex;   
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:1449px) {
+    .flex_section{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        
+        align-items: center;
+
+    }
+    .flex_section div{
+        width: 100%;
+        height: 50%;
+    }
+    .section_card{
+        display: flex;
+        flex-direction: column;
+        
+
     }
 }
