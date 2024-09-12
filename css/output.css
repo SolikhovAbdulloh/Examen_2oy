@@ -572,8 +572,33 @@ video {
   gap: 20px;
 }
 
+.border-b-\[4px\]{
+  border-bottom-width: 4px;
+}
+
+.border-\[yellow\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 0 / var(--tw-border-opacity));
+}
+
+.text-\[16px\]{
+  font-size: 16px;
+}
+
 .text-\[20px\]{
   font-size: 20px;
+}
+
+.text-\[52px\]{
+  font-size: 52px;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-normal{
+  font-weight: 400;
 }
 
 .font-semibold{
@@ -584,9 +609,18 @@ video {
   line-height: 125%;
 }
 
+.leading-\[150\%\]{
+  line-height: 150%;
+}
+
 .text-\[\#363738\]{
   --tw-text-opacity: 1;
   color: rgb(54 55 56 / var(--tw-text-opacity));
+}
+
+.text-\[\#6b6b6c\]{
+  --tw-text-opacity: 1;
+  color: rgb(107 107 108 / var(--tw-text-opacity));
 }
 
 body {
@@ -604,55 +638,101 @@ a {
   text-decoration: none;
 }
 
-a:hover{
-  color: #FF9619;
+a:hover {
+  color: #ff9619;
 }
 
 button {
   width: 271px;
   height: 42px;
-  background-color: #FF9619;
+  background-color: #ff9619;
   color: white;
 }
 
-.contiener{
-  padding: 20px 40px;
+.contiener {
+  padding: 10px 40px;
   margin: 0 auto;
   width: 90%;
 }
 
-header{
+header {
   top: 0px;
   z-index: 999;
   background-color: white;
 }
 
-#menu{
+#menu {
   display: none;
 }
 
-@media(min-width:1600px){
-  .contiener{
+@media (min-width: 1600px) {
+  .contiener {
     max-width: 1440px;
   }
 }
 
-@media(max-width:877px){
-  .menu_flex{
+@media (max-width: 877px) {
+  .menu_flex {
     display: none;
   }
 
-  #menu{
+  #menu {
     display: block;
     color: black;
   }
 }
 
-@media (max-width:516px){
-  header div{
+@media (max-width: 516px) {
+  header div {
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
+  }
+}
+
+@media (max-width:1390px){
+  .first_section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .text_first_section h3{
+    text-align: center;
+  }
+
+  .text_first_section p{
+    text-align: center;
+  }
+
+  .car{
+    order: 2;
+    width: 100%;
+  }
+}
+
+@media (max-width:700px){
+  .first_section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .text_first_section h3{
+    text-align: start;
+    font-size: 30px;
+  }
+
+  .text_first_section p{
+    text-align: start;
+    font-size: 13px;
+  }
+
+  .car{
+    order: 2;
+    width: 100%;
   }
 }

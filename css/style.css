@@ -18,56 +18,90 @@ a {
   list-style: none;
   text-decoration: none;
 }
-a:hover{
-    color: #FF9619;
+a:hover {
+  color: #ff9619;
 }
 
 button {
   width: 271px;
   height: 42px;
-  background-color: #FF9619;
+  background-color: #ff9619;
   color: white;
 }
 
-.contiener{
-    padding: 20px 40px;
-    margin: 0 auto;
-    width: 90%;
+.contiener {
+  padding: 10px 40px;
+  margin: 0 auto;
+  width: 90%;
 }
 
-header{
-    top: 0px;
-    z-index: 999;
-    background-color: white;
+header {
+  top: 0px;
+  z-index: 999;
+  background-color: white;
 }
 
+#menu {
+  display: none;
+}
 
-#menu{
+@media (min-width: 1600px) {
+  .contiener {
+    max-width: 1440px;
+  }
+}
+@media (max-width: 877px) {
+  .menu_flex {
     display: none;
+  }
+  #menu {
+    display: block;
+    color: black;
+  }
 }
-
-
-
-
-@media(min-width:1600px){
-    .contiener{
-        max-width: 1440px;
-    }
+@media (max-width: 516px) {
+  header div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
 }
-@media(max-width:877px){
-    .menu_flex{
-        display: none;
-    }
-    #menu{
-        display: block;
-        color: black;
-    }
-}
-@media (max-width:516px){
-    header div{
+@media (max-width:1390px){
+    .first_section div{
         display: flex;
         flex-direction: column;
-        gap: 15px;
         align-items: center;
+        gap: 20px;
+    }
+    .text_first_section h3{
+        text-align: center;
+    }
+    .text_first_section p{
+        text-align: center;
+    }
+    .car{
+        order: 2;
+        width: 100%;
+    }
+}
+@media (max-width:700px){
+    .first_section div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .text_first_section h3{
+        text-align: start;
+        font-size: 30px;
+    }
+    .text_first_section p{
+        text-align: start;
+        font-size: 13px;
+    }
+    .car{
+        order: 2;
+        width: 100%;
     }
 }
