@@ -7,6 +7,7 @@ module.exports = {
       sariq: "#FF9619",
       yashil: "#0B7572",
       qora: "#363738",
+      oq: "#ffff",
     },
     extend: {},
   },

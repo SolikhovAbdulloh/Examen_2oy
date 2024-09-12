@@ -45,6 +45,50 @@ header {
   display: none;
 }
 
+.pictures{
+    position: relative;
+}
+.pictures_text h3{
+    background-color: yellowgreen;
+    color: white;
+    position: absolute;
+    top:0px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1600px) {
   .contiener {
     max-width: 1440px;
@@ -133,4 +177,19 @@ header {
     text-align: center;
   }
   
+}
+@media (max-width:1800px){
+   .pictures img{
+    width: 60%;
+   }
+}
+@media (max-width:1766px){
+   .pictures h3{
+    width: 40%;
+   }
+}
+@media(max-width:900px){
+    .three_section div{
+        display: none;
+    }
 }
