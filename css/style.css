@@ -40,14 +40,13 @@ button {
 }
 
 header {
+  position: sticky;
   top: 0px;
   z-index: 999;
   background-color: white;
 }
 
-#menu {
-  display: none;
-}
+
 
 .pictures {
   position: relative;
@@ -63,20 +62,29 @@ table tr td {
   border: 1px solid #d7d7dd;
 }
 
+#menu{
+  display: none;
+}
+
+
+
 @media (min-width: 1600px) {
   .contiener {
     max-width: 1440px;
   }
 }
 @media (max-width: 877px) {
-  .menu_flex {
-    display: none;
-  }
-  #menu {
-    display: block;
-    color: black;
-  }
+    .menu_flex{
+      display: none;
+    }
+    #menu{
+      display: block;
+    }
 }
+  
+ 
+
+
 @media (max-width: 516px) {
   header div {
     display: flex;
@@ -91,6 +99,7 @@ table tr td {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    text-align: center;
   }
   .text_first_section h3 {
     text-align: center;
@@ -284,9 +293,59 @@ table tr td {
     }
 }
 
-@media (max-width:1722px) {
+@media (max-width:1422px) {
     .grid_sotrudnik{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+@media (max-width:1110px) {
+  .right_contact{
+    order: 1;
+  }
+  .yyy{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+  }
+  .contact div h3{
+    display: none;
+  }
+}
+@media (max-width:944px) {
+    .footer .contiener{
+      display: grid;
+      grid-template-columns: repeat(2,2fr);
+      align-items: center;
+      gap: 30px;
+    }
+}
+@media (max-width:632px) {
+    .mn{
+      display: none;
+    }
+    .ff{
+      display: none;
+    }
+    .footer .contiener{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+    .ll{
+      text-align: center;
+
+    }
+    button{
+      width: 230px;
+      height: 30px;
+      border-radius: 30px;
+
     }
 }
