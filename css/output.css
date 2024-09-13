@@ -847,6 +847,10 @@ video {
   padding: 80px;
 }
 
+.pb-\[20px\]{
+  padding-bottom: 20px;
+}
+
 .pl-\[30px\]{
   padding-left: 30px;
 }
@@ -857,6 +861,10 @@ video {
 
 .pt-3{
   padding-top: 0.75rem;
+}
+
+.pt-\[30px\]{
+  padding-top: 30px;
 }
 
 .text-center{
