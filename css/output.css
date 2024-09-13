@@ -564,6 +564,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
 .mt-\[10vh\]{
   margin-top: 10vh;
 }
@@ -586,6 +590,14 @@ video {
 
 .grid{
   display: grid;
+}
+
+.h-\[210px\]{
+  height: 210px;
+}
+
+.h-\[245px\]{
+  height: 245px;
 }
 
 .h-\[275px\]{
@@ -624,6 +636,10 @@ video {
   width: 393px;
 }
 
+.w-\[605px\]{
+  width: 605px;
+}
+
 .w-\[652px\]{
   width: 652px;
 }
@@ -640,6 +656,14 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-\[repeat\(2\2c 2fr\)\]{
+  grid-template-columns: repeat(2,2fr);
+}
+
+.grid-cols-\[repeat\(4\2c 2fr\)\]{
+  grid-template-columns: repeat(4,2fr);
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -650,6 +674,10 @@ video {
 
 .items-center{
   align-items: center;
+}
+
+.justify-start{
+  justify-content: flex-start;
 }
 
 .justify-center{
@@ -672,6 +700,10 @@ video {
   gap: 1rem;
 }
 
+.gap-5{
+  gap: 1.25rem;
+}
+
 .gap-\[20px\]{
   gap: 20px;
 }
@@ -680,8 +712,24 @@ video {
   gap: 30px;
 }
 
+.gap-\[60px\]{
+  gap: 60px;
+}
+
 .gap-\[70px\]{
   gap: 70px;
+}
+
+.gap-\[50px\]{
+  gap: 50px;
+}
+
+.gap-7{
+  gap: 1.75rem;
+}
+
+.gap-\[5vh\]{
+  gap: 5vh;
 }
 
 .rounded-\[10px\]{
@@ -702,6 +750,10 @@ video {
 
 .border-b-\[4px\]{
   border-bottom-width: 4px;
+}
+
+.border-r-2{
+  border-right-width: 2px;
 }
 
 .border-r-\[2px\]{
@@ -727,6 +779,10 @@ video {
   border-bottom-color: 1px solid black;
 }
 
+.border-r-\[2px_solid_\#6B6B6C\]{
+  border-right-color: 2px solid #6B6B6C;
+}
+
 .bg-\[\#E9E9EC\]{
   --tw-bg-opacity: 1;
   background-color: rgb(233 233 236 / var(--tw-bg-opacity));
@@ -744,6 +800,53 @@ video {
 .bg-yashil{
   --tw-bg-opacity: 1;
   background-color: rgb(11 117 114 / var(--tw-bg-opacity));
+}
+
+.bg-qora{
+  --tw-bg-opacity: 1;
+  background-color: rgb(54 55 56 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f9f9fba2\]{
+  background-color: #f9f9fba2;
+}
+
+.bg-\[rgba\(249\2c 249\2c 251\2c 0\.64\)\]{
+  background-color: rgba(249,249,251,0.64);
+}
+
+.bg-\[hsla\(210\2c 20\%\2c 98\%\2c 1\)\]{
+  background-color: hsla(210,20%,98%,1);
+}
+
+.bg-\[gray\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(128 128 128 / var(--tw-bg-opacity));
+}
+
+.bg-\[rgba\(128\2c 128\2c 128\2c 0\.85\)\]{
+  background-color: rgba(128,128,128,0.85);
+}
+
+.bg-\[\#f9f9fb\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 249 251 / var(--tw-bg-opacity));
+}
+
+.bg-\[rgba\(249\2c 249\2c 251\2c 0\.72\)\]{
+  background-color: rgba(249,249,251,0.72);
+}
+
+.bg-\[rgba\(249\2c 249\2c 251\2c 0\.39\)\]{
+  background-color: rgba(249,249,251,0.39);
+}
+
+.bg-\[\#f9f9fb63\]{
+  background-color: #f9f9fb63;
+}
+
+.fill-\[\#fff\]{
+  fill: #fff;
 }
 
 .p-1{
@@ -772,6 +875,10 @@ video {
 
 .p-\[20px\]{
   padding: 20px;
+}
+
+.p-\[30px\]{
+  padding: 30px;
 }
 
 .p-\[80px\]{
@@ -863,6 +970,10 @@ video {
 
 .\[box-shadow\:0_4px_15px_0_rgba\(0\2c _0\2c _0\2c _0\.12\)\]{
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.12);
+}
+
+.\[box-shadow\:0_4px_15px_0_rgba\(0\2c _0\2c _0\2c _0\.15\)\]{
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -988,6 +1099,12 @@ table tr td {
   transition: 0.9s;
 }
 
+.card_d:hover {
+  box-shadow: 0 0 20px #ff9619, /* Neon cyan */ 0 0 20px #ff9619,
+    0 0 20px #ff9619, 0 0 20px #ff9619;
+  transition: 0.9s;
+}
+
 @media (max-width: 700px) {
   .first_section div {
     display: flex;
@@ -1101,16 +1218,57 @@ table tr td {
 @media (max-width: 1000px) {
   .responsivee{
     width: 100%;
-  }
-
-  .right {
-    width: 555px;
-    height: 666px;
-  }
-
-  table tr,th,td{
-    width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: start;
   }
 }
 
+@media (max-width: 819px) {
+  .responsivee{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    background-color: white;
+    display: none;
+  }
+
+  .responsivee .left{
+    display: none;
+  }
+
+  .pvd{
+    display: none;
+  }
+}
+
+@media (max-width:1138px) {
+  .ddd img{
+    display: none;
+  }
+}
+
+@media (max-width:777px) {
+  .p p{
+    font-size: 13px;
+  }
+
+  .ddd{
+    width: 400px;
+  }
+}
+
+@media (max-width:1336px) {
+  .lll{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+  }
+}
+
+@media (max-width:858px) {
+  .lll{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+}

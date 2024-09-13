@@ -28,6 +28,10 @@ button {
   background-color: #ff9619;
   color: white;
 }
+#bb:hover{
+    background-color: black;
+    color: white;
+}
 
 .contiener {
   padding: 10px 40px;
@@ -114,6 +118,17 @@ table tr td {
     0 0 20px #ff9619, 0 0 20px #ff9619;
   transition: 0.9s;
 }
+.card_d:hover {
+  box-shadow: 0 0 20px #ff9619, /* Neon cyan */ 0 0 20px #ff9619,
+    0 0 20px #ff9619, 0 0 20px #ff9619;
+  transition: 0.9s;
+}
+.card_1:hover {
+  box-shadow: 0 0 20px #ff9619, /* Neon cyan */ 0 0 20px #ff9619,
+    0 0 20px #ff9619, 0 0 20px #ff9619;
+  transition: 0.9s;
+}
+
 @media (max-width: 700px) {
   .first_section div {
     display: flex;
@@ -215,16 +230,63 @@ table tr td {
 @media (max-width: 1000px) {
   .responsivee{
     width: 100%;
+    display: flex;
+    justify-content: start;
   }
   
-    .right {
-   width: 555px;
-height: 666px;
+   
 
 }
-table tr,th,td{
+@media (max-width: 819px) {
+  .responsivee{
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    background-color: white;
+    display: none;
+  }
+  .responsivee .left{
+    display: none;
+  }
+  .pvd{
+    display: none;
+  }
+  
+   
+
 }
+@media (max-width:1138px) {
+    .ddd img{
+        display: none;
+    }
+}
+@media (max-width:777px) {
+  .p p{
+    font-size: 13px;
+  }
+  .ddd{
+    width: 400px;
+  }
+}
+@media (max-width:1336px) {
+    .lll{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+    }
+}
+@media (max-width:858px) {
+    .lll{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+
+    }
 }
 
+@media (max-width:1722px) {
+    .grid_sotrudnik{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
